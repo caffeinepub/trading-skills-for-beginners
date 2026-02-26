@@ -1,0 +1,63 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-create-a-professional-article-landing-page-titled-trading-skills-for-beginners-with-three-main-content-sections-1-basics-of-trading-explaining-fundamental-concepts-like-assets-markets-and-buy-sell-mechanics-2-background-of-trading-a-brief-history-and-evolution-of-trading-markets-3-how-to-start-trading-a-step-by-step-beginner-guide-covering-account-setup-choosing-a-broker-risk-management-and-making-first-trades",
+      "featureTitle": "Create a professional article landing page titled 'Trading Skills for Beginners' with three main content sections: (1) Basics of Trading – explaining fundamental concepts like assets, markets, and buy/sell mechanics; (2) Background of Trading – a brief history and evolution of trading markets; (3) How to Start Trading – a step-by-step beginner guide covering account setup, choosing a broker, risk management, and making first trades.",
+      "files": [
+        "frontend/index.html",
+        "frontend/src/App.tsx",
+        "frontend/src/pages/TradingSkillsArticle.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-apply-a-bold-modern-financial-editorial-visual-theme-to-the-landing-page-using-a-dark-charcoal-and-gold-color-palette-strong-typography-with-a-serif-headline-font-and-clean-sans-serif-body-font-and-a-structured-editorial-layout-with-clear-visual-hierarchy-the-design-should-feel-credible-and-professional-suitable-for-a-financial-education-article",
+      "featureTitle": "Apply a bold, modern financial/editorial visual theme to the landing page using a dark charcoal and gold color palette, strong typography with a serif headline font and clean sans-serif body font, and a structured editorial layout with clear visual hierarchy. The design should feel credible and professional, suitable for a financial education article.",
+      "files": [
+        "frontend/src/index.css",
+        "frontend/src/pages/TradingSkillsArticle.tsx",
+        "frontend/tailwind.config.js"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "featureId": "feature-add-a-hero-banner-image-depicting-a-financial-trading-theme-a-stylized-stock-chart-or-market-candlestick-pattern-rendered-as-a-static-asset-and-displayed-as-the-article-hero-background",
+      "featureTitle": "Add a hero banner image depicting a financial trading theme — a stylized stock chart or market candlestick pattern — rendered as a static asset and displayed as the article hero background.",
+      "files": [
+        "frontend/src/pages/TradingSkillsArticle.tsx"
+      ],
+      "components": [
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-3"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

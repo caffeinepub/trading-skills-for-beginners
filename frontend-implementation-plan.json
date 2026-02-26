@@ -1,0 +1,80 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Trading Skills for Beginners – Article Landing Page",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Create a professional article landing page with three main content sections covering trading basics, history, and beginner guide",
+      "acceptanceCriteria": [
+        "Page displays a prominent hero section with the article title 'Trading Skills for Beginners'",
+        "Three clearly labeled content sections are present: Basics of Trading, Background of Trading, How to Start Trading",
+        "Each section contains substantive, readable content appropriate for beginners",
+        "Page includes a sticky table of contents or section navigation for easy scrolling",
+        "Page uses semantic HTML (h1, h2, h3, article, section tags) for SEO-friendliness",
+        "Meta title and description are set appropriately for the article topic"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/TradingSkillsArticle.tsx",
+          "operation": "create",
+          "description": "Create the main article landing page component containing a hero section with title 'Trading Skills for Beginners', three semantic content sections (Basics of Trading, Background of Trading, How to Start Trading) with beginner-friendly explanatory content, and a sticky table of contents sidebar for section navigation. Use semantic HTML elements (article, section, h1, h2, h3) for SEO optimization."
+        },
+        {
+          "path": "frontend/src/App.tsx",
+          "operation": "modify",
+          "description": "Add route for the TradingSkillsArticle page at the root path '/' to make it the landing page of the application."
+        },
+        {
+          "path": "frontend/index.html",
+          "operation": "modify",
+          "description": "Update the document title to 'Trading Skills for Beginners – Trading Skills Hub' and add meta description tag with content appropriate for the article topic (e.g., 'Learn the fundamentals of trading, explore trading history, and discover how to start your trading journey with this comprehensive beginner guide')."
+        }
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "summary": "Apply a bold, modern financial/editorial visual theme with dark charcoal and gold color palette, serif headlines, and clean sans-serif body typography",
+      "acceptanceCriteria": [
+        "Color palette uses dark charcoal backgrounds with gold/amber accents consistently throughout",
+        "Headline font is a serif typeface; body text uses a readable sans-serif font",
+        "Visual hierarchy is clear — headings stand out from body text",
+        "Layout is clean, editorial, and responsive across desktop and mobile screen sizes",
+        "Call-to-action or share elements (if present) match the overall theme"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/tailwind.config.js",
+          "operation": "modify",
+          "description": "Extend the Tailwind theme with custom colors for dark charcoal backgrounds (e.g., charcoal: '#1a1a1a', 'charcoal-light': '#2d2d2d') and gold accents (e.g., gold: '#d4af37', 'gold-light': '#f0d977'). Add custom serif font family for headlines and ensure sans-serif fonts are configured for body text."
+        },
+        {
+          "path": "frontend/src/index.css",
+          "operation": "modify",
+          "description": "Import and configure serif font (e.g., from Google Fonts: Playfair Display or Merriweather) for headlines and sans-serif font (e.g., Inter or Roboto) for body text. Set global CSS custom properties for the financial theme color palette (dark charcoal and gold). Apply base typography styles to establish clear visual hierarchy with larger, bold serif headings and readable sans-serif body text."
+        },
+        {
+          "path": "frontend/src/pages/TradingSkillsArticle.tsx",
+          "operation": "modify",
+          "description": "Apply the dark charcoal and gold theme styling using Tailwind utility classes. Use custom charcoal background colors, gold accents for highlights and borders, serif font classes for all headings (h1, h2, h3), and sans-serif font classes for body text. Ensure responsive layout with clear visual hierarchy and editorial spacing. Include responsive design for mobile and desktop viewports."
+        }
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "summary": "Add a hero banner image depicting a financial trading theme as the article hero background",
+      "acceptanceCriteria": [
+        "Hero banner image is displayed at the top of the article page as a full-width or wide background",
+        "Image file is served from frontend/public/assets/generated",
+        "Image is visually consistent with the dark charcoal and gold theme"
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/pages/TradingSkillsArticle.tsx",
+          "operation": "modify",
+          "description": "Wire the generated hero banner image frontend/public/assets/generated/trading-hero.dim_1200x500.png into the hero section as a full-width background image using CSS background-image or an img element with object-fit styling. Ensure the image is responsive and visually consistent with the dark charcoal and gold theme. Add overlay or gradient if needed to maintain text readability over the image."
+        }
+      ]
+    }
+  ]
+}

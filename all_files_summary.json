@@ -1,0 +1,15 @@
+{
+  "backend/main.mo": "Empty Motoko actor serving as the backend entry point with no implemented methods.",
+  "feature_evidence.json": "Feature evidence report mapping three implemented features (article content sections, visual theme, hero banner) to their associated source files, components, and test IDs.",
+  "frontend-file-summaries.txt": "JSON document containing one-line summaries of each frontend file for build planning reference.",
+  "frontend/index.css": "Default Tailwind CSS base with OKLCH CSS custom properties for light and dark color themes using shadcn-style design tokens.",
+  "frontend/index.html": "HTML entry point with SEO meta tags, Open Graph tags, and Google Fonts preconnect for Playfair Display and Inter fonts.",
+  "frontend/src/App.tsx": "Root React component that renders TradingSkillsArticle as the sole page.",
+  "frontend/src/hooks/useActor.ts": "Custom hook that creates and caches an ICP backend actor using React Query, supporting both anonymous and authenticated (Internet Identity) usage.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Custom hook and context provider that manages Internet Identity authentication state, exposing login, logout, and identity status via AuthClient.",
+  "frontend/src/index.css": "Global styles defining a dark charcoal and gold OKLCH color palette, Playfair Display serif headlines, Inter sans-serif body font, and utility classes for the trading theme.",
+  "frontend/src/main.tsx": "React app entry point that mounts the app wrapped in QueryClientProvider and InternetIdentityProvider.",
+  "frontend/src/pages/TradingSkillsArticle.tsx": "Full trading article landing page featuring a sticky header with section navigation, hero banner, three content sections (Basics, Background, How to Start), a desktop sidebar TOC, mobile dropdown TOC, and a scroll-to-top button.",
+  "frontend/tailwind.config.js": "Tailwind CSS configuration defining dark mode, content paths, custom fonts (Playfair Display, Inter), an extended color palette using OKLCH CSS variables plus brand colors (charcoal, gold, sand), border radius tokens, and plugins for typography, container queries, and animations.",
+  "project_state.json": "Project state metadata for a 'Trading Skills for Beginners' landing page, tracking schema version, existing features (article sections, visual theme, hero banner), a pending new feature request, image requirements, and known generation failures."
+}

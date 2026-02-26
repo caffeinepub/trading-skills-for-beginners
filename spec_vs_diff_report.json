@@ -1,0 +1,33 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-26T22:59:00.746Z",
+  "summary": "The diff implements the trading article landing page with most requirements well-covered: three content sections, sticky navigation/TOC, semantic HTML, SEO meta tags, dark charcoal/gold color palette, serif/sans-serif typography, and responsive layout. However, the hero banner image asset (trading-hero.dim_1200x500.png) is not present in the diff — no file under frontend/public/assets/generated is added — meaning REQ-3's image file requirement is unmet. The article page references a hero section but relies on CSS/overlay rather than a served image asset. No significant hallucinated features were detected.",
+  "missing_requirements": [
+    {
+      "id": "REQ-3",
+      "requirement": "Hero banner image (trading-hero.dim_1200x500.png) served from frontend/public/assets/generated, displayed as a full-width background in the hero section, visually consistent with the dark charcoal and gold theme.",
+      "reason": "No image file is added anywhere in the diff. There is no file under frontend/public/assets/generated, and no reference to trading-hero.dim_1200x500.png appears in any of the added files. The hero section appears to rely on CSS styling rather than a static image asset.",
+      "evidence": [
+        "frontend/src/pages/TradingSkillsArticle.tsx"
+      ]
+    }
+  ],
+  "hallucinated_features": [],
+  "confidence": 0.85,
+  "changed_files": [
+    "all_files_summary.json",
+    "backend/main.mo",
+    "frontend-file-summaries.txt",
+    "frontend/index.css",
+    "frontend/index.html",
+    "frontend/src/App.tsx",
+    "frontend/src/hooks/useActor.ts",
+    "frontend/src/hooks/useInternetIdentity.ts",
+    "frontend/src/index.css",
+    "frontend/src/main.tsx",
+    "frontend/src/pages/TradingSkillsArticle.tsx",
+    "frontend/tailwind.config.js",
+    "project_state.json"
+  ]
+}

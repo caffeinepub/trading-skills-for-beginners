@@ -1,0 +1,82 @@
+{
+  "kind": "build_request",
+  "title": "Trading Skills for Beginners – Article Landing Page",
+  "projectName": "Trading Skills Hub",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Create a professional article landing page titled 'Trading Skills for Beginners' with three main content sections: (1) Basics of Trading – explaining fundamental concepts like assets, markets, and buy/sell mechanics; (2) Background of Trading – a brief history and evolution of trading markets; (3) How to Start Trading – a step-by-step beginner guide covering account setup, choosing a broker, risk management, and making first trades.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4",
+          "msg-6"
+        ],
+        "quotes": [
+          "article title : trading skills for beginners",
+          "1. To teach basics of trading",
+          "2. Background of trading",
+          "3. how to start trading"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Page displays a prominent hero section with the article title 'Trading Skills for Beginners'",
+        "Three clearly labeled content sections are present: Basics of Trading, Background of Trading, How to Start Trading",
+        "Each section contains substantive, readable content appropriate for beginners",
+        "Page includes a sticky table of contents or section navigation for easy scrolling",
+        "Page uses semantic HTML (h1, h2, h3, article, section tags) for SEO-friendliness",
+        "Meta title and description are set appropriately for the article topic"
+      ]
+    },
+    {
+      "id": "REQ-2",
+      "text": "Apply a bold, modern financial/editorial visual theme to the landing page using a dark charcoal and gold color palette, strong typography with a serif headline font and clean sans-serif body font, and a structured editorial layout with clear visual hierarchy. The design should feel credible and professional, suitable for a financial education article.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Color palette uses dark charcoal backgrounds with gold/amber accents consistently throughout",
+        "Headline font is a serif typeface; body text uses a readable sans-serif font",
+        "Visual hierarchy is clear — headings stand out from body text",
+        "Layout is clean, editorial, and responsive across desktop and mobile screen sizes",
+        "Call-to-action or share elements (if present) match the overall theme"
+      ]
+    },
+    {
+      "id": "REQ-3",
+      "text": "Add a hero banner image depicting a financial trading theme — a stylized stock chart or market candlestick pattern — rendered as a static asset and displayed as the article hero background.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-4"
+        ]
+      },
+      "acceptanceCriteria": [
+        "Hero banner image is displayed at the top of the article page as a full-width or wide background",
+        "Image file is served from frontend/public/assets/generated",
+        "Image is visually consistent with the dark charcoal and gold theme"
+      ]
+    }
+  ],
+  "constraints": [
+    "All content must be stored and rendered on the frontend only — no backend persistence needed for static article content",
+    "Use semantic HTML elements for SEO compatibility"
+  ],
+  "nonGoals": [
+    "Actual Google SEO ranking improvements (this is outside the scope of the application)",
+    "User authentication or login",
+    "Comment sections or user-generated content",
+    "Real-time market data or live trading integrations",
+    "Multiple articles or a full blog CMS"
+  ],
+  "imageRequirements": {
+    "required": [
+      "Stylized financial trading hero banner with candlestick charts and glowing gold lines on a dark charcoal background, wide landscape composition (trading-hero.dim_1200x500.png)"
+    ],
+    "edits": []
+  }
+}

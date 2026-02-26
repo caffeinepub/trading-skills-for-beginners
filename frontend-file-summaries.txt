@@ -1,0 +1,7 @@
+{
+  "frontend/index.html": "HTML entry point with SEO meta tags (title, description, keywords, OG tags) and Google Fonts preconnect for Playfair Display and Inter fonts.",
+  "frontend/src/App.tsx": "Root app component that renders the TradingSkillsArticle page as the default route.",
+  "frontend/src/pages/TradingSkillsArticle.tsx": "Full article landing page with sticky header navigation, hero banner with overlay, three semantic content sections (Basics of Trading, Background of Trading, How to Start Trading), a sticky desktop sidebar TOC, mobile dropdown TOC, scroll-to-top button, and a branded footer.",
+  "frontend/src/index.css": "Global styles with OKLCH dark charcoal and gold color system, Playfair Display serif headline font, Inter sans-serif body font, and utility classes for the trading theme.",
+  "frontend/tailwind.config.js": "Extended Tailwind config with custom charcoal, gold, and sand color tokens, Playfair Display headline font family, and Inter body font family."
+}
